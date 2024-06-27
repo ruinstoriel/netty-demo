@@ -3,6 +3,7 @@ package org.example.socks5
 import io.netty.bootstrap.Bootstrap
 import io.netty.channel.*
 import io.netty.channel.socket.nio.NioSocketChannel
+import io.netty.handler.codec.http.FullHttpRequest
 import io.netty.handler.codec.socksx.v5.DefaultSocks5CommandResponse
 import io.netty.handler.codec.socksx.v5.Socks5CommandRequest
 import io.netty.handler.codec.socksx.v5.Socks5CommandStatus

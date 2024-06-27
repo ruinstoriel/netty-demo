@@ -11,7 +11,7 @@ class RelayHandler(private val relayChannel: Channel?):ChannelInboundHandlerAdap
 
 
     override fun channelActive(ctx: ChannelHandlerContext) {
-        ctx.writeAndFlush(Unpooled.EMPTY_BUFFER)
+
     }
 
     override fun channelRead(ctx: ChannelHandlerContext, msg: Any) {

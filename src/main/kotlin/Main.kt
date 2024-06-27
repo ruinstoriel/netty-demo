@@ -2,11 +2,12 @@ package org.example
 
 import io.netty.util.concurrent.Future
 import io.netty.util.concurrent.GenericFutureListener
+import org.example.http.proxy.HttpProxyServer
 import org.example.socks5.Socks5Server
 
 
 fun main() {
-    Socks5Server().start(2080)
+    HttpProxyServer().start(2080)
 }
 
 fun interface IntPredicate {

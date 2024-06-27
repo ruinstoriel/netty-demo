@@ -17,4 +17,7 @@ class DirectClientHandler(private val promise: Promise<Channel>?):ChannelInbound
     override fun exceptionCaught(ctx: ChannelHandlerContext?, throwable: Throwable?) {
         promise!!.setFailure(throwable)
     }
+    override fun channelReadComplete(ctx: ChannelHandlerContext?) {
+        ctx!!.flush()
+    }
 }
