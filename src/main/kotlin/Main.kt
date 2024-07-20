@@ -2,12 +2,12 @@ package org.example
 
 import io.netty.util.concurrent.Future
 import io.netty.util.concurrent.GenericFutureListener
-import org.example.http.proxy.HttpProxyServer
-import org.example.socks5.Socks5Server
+import org.example.http.upload.HttpUploadServer
 
 
 fun main() {
-    HttpProxyServer().start(2080)
+   HttpUploadServer(false,8080).start()
+
 }
 
 fun interface IntPredicate {
